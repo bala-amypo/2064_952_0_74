@@ -10,8 +10,8 @@ import com.example.demo.service.StudentService;
 public class StudentController{
     @Autowired
     StudentService stdser;
-    @postMapping("/addStudent")
+    @PostMapping("/addStudent")
     public Studoent addStudent(@RequestBody Student st){
-        return stdrepo.poststudent(st);
+        return stdser.poststudent(st);
     }
 }
