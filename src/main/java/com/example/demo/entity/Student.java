@@ -38,4 +38,14 @@ public class student {
       public void setCGPAT(float cgpa){
         this.cgpa=cgpa;
     }
+    public Student(int id, String name, String dept,LocalDate dob,float cgpa) {
+        this.id = id;
+        this.name = name;
+        this.dept = dept;
+        this.dob = dob;
+        this.cgpa = cgpa;
+    }
+    public Student() {
+    }
+    
 }
