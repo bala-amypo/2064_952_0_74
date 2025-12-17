@@ -11,7 +11,7 @@ public class StudentController{
     @Autowired
     StudentService stdser;
     @PostMapping("/addStudent")
-    public Studoent addStudent(@RequestBody Student st){
+    public Student addStudent(@RequestBody Student st){
         return stdser.poststudent(st);
     }
 }
