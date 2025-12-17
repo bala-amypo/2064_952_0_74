@@ -1,55 +1,54 @@
 package com.example.demo.entity;
- 
 import java.time.*;
-
 import jakarta.persistence.*;
 @Entity
-public class student {
+public class Student{
     @Id
-    @GeneratedValue(strategyeGenerationType.IDENTITY);
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String dept;
     private LocalDate dob;
     private float cgpa;
-    public Long getId(){
+    public Long getId() {
         return id;
     }
-    public void setId(long id){
-        this.id=id;
+    public void setId(Long id) {
+        this.id = id;
     }
-      public String getName(){
+    public String getName() {
         return name;
     }
-      public void setName(String name){
-        this.name=name;
+    public void setName(String name) {
+        this.name = name;
     }
-      public String getDEPT(){
+    public String getDept() {
         return dept;
     }
-      public void setDEPT(String dept){
-        this.dept=dept;
+    public void setDept(String dept) {
+        this.dept = dept;
     }
-      public LocalDate getDOB(){
+    public LocalDate getDob() {
         return dob;
     }
-      public void setDOB(LocalDate dob){
-        this.dob=dob;
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
     }
-      public float getCGPA(){
+    public float getCgpa() {
         return cgpa;
     }
-      public void setCGPAT(float cgpa){
-        this.cgpa=cgpa;
+    public void setCgpa(float cgpa) {
+        this.cgpa = cgpa;
     }
-    public Student(int id, String name, String dept,LocalDate dob,float cgpa) {
+    public Student(Long id, String name, String dept, LocalDate dob, float cgpa) {
         this.id = id;
         this.name = name;
         this.dept = dept;
         this.dob = dob;
         this.cgpa = cgpa;
     }
-    public Student() {
-    }
-    
+    public Student(){
+
+}
+
 }
