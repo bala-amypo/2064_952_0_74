@@ -9,11 +9,21 @@ public class student {
     private LocalDate dob;
     private float cgpa;
     public Long getId(){
-        retrun id;
+        return id;
     }
     public void setId(long id){
         this.id=id;
     }
-
-
+      public void getName(){
+        return name;
+    }
+      public void setName(String name){
+        this.name=name;
+    }
+      public void getDEPT(){
+        return dept;
+    }
+      public void setDEPT(long id){
+        this.id=id;
+    }
 }
