@@ -9,9 +9,9 @@ import com.example.demo.service.StudentService;
 @RestController
 public class StudentController{
     @Autowired
-
+    StudentService stdser;
     @postMapping("/addStudent")
     public Studoent addStudent(@RequestBody Student st){
-        return stdser.poststudent(st);
+        return stdrepo.poststudent(st);
     }
 }
