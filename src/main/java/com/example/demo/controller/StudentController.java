@@ -1,6 +1,17 @@
 package com.example.demo.controller;
 
-import org.springframework.web.bind.annotation.Res
-public class StudentController{
+import org.springframework.
+import org.springframework.web.bind.annotation.*;
 
+import com.example.demo/entity.Student;
+import com.example.demo.service.StudentService;
+
+@RestController
+public class StudentController{
+    @Autowired
+
+    @postMapping("/addStudent")
+    public Studoent addStudent(@RequestBody Student st){
+        return
+    }
 }
