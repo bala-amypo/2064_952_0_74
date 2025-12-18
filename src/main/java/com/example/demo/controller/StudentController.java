@@ -22,8 +22,8 @@ public class StudentController{
          return stdser.getbyId(id);
     }
     @PutMapping("/update/{id}")
-    public String update(@pathVariable Long id,@RequestBody Student st){
-       return stdser.updateDate(id,st);
+    public String update(@PathVariable Long id,@RequestBody Student st){
+       return stdser.updateData(id,st);
     }
 
 }
