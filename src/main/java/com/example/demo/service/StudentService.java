@@ -6,4 +6,5 @@ public interface StudentService{
     List<Student> getAllStudents();
     Optional<Student> getbyId(Long id);
     String updateData(Long id,Student st);
+    String deleteData(Long id);
 }
