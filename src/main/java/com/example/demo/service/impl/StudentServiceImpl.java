@@ -14,4 +14,6 @@ public class StudentServiceImpl implements StudentService{
     public Student poststudent(Student st){
         return stdrepo.save(st);
     }
+    @Override
+    public List<student
 }
