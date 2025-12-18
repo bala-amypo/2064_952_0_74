@@ -5,8 +5,5 @@ public interface StudentService{
     Student poststudent(Student st);
     List<Student> getAllStudents();
     Optional<Student> getbyId(Long id);
-    if(status){
-        st.setId(id);
-        stdrepo.save
-    }
+    String update
 }
