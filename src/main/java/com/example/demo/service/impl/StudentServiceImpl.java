@@ -15,11 +15,11 @@ public class StudentServiceImpl implements StudentService{
         return stdrepo.save(st);
     }
     @Override
-    public List<student> getAllStudent(){
+    public List<Student> getAllStudent(){
         return stdrepo.findAll();
     }
-    @override
-    public Optional<student> getById(Long id){
+    @Override
+    public Optional<Student> getById(Long id){
         return stdrepo.findById(id);
     }
 }

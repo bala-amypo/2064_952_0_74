@@ -3,6 +3,6 @@ import java.util.*;
 import com.example.demo.entity.Student;
 public interface StudentService{
     Student poststudent(Student st);
-    List<student> getAllStudents();
-    Optional<student> getbyId(long id);
+    List<Student> getAllStudents();
+    Optional<Student> getbyId(long id);
 }
