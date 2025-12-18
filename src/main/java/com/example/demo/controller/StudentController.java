@@ -22,5 +22,7 @@ public class StudentController{
          return stdser.getbyId(id);
     }
     @PutMapping("/update/{id}")
-    public String update@pathVaria
+    public String update@pathVariable Long id,@RequestBody Student st{
+       return stdser.updateDate(id,st);
+    }
 }
