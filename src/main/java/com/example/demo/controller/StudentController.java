@@ -15,10 +15,10 @@ public class StudentController{
     }
     @GetMapping("/getall")
     public List<Student>get(){
-      return stdser.getAllstudents();
+      return stdser.getAllStudents();
     }
-    @GetMapping("/getById/{id}")
-    public Optional<Student>getId(@PathVariable Long id){
-         return stdser.getById(id);
+    @GetMapping("/getId/{id}")
+    public Optional<Student> getId(@PathVariable Long id){
+         return stdser.getbyId(id);
     }
 }
