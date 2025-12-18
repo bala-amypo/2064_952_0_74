@@ -23,7 +23,10 @@ public class StudentServiceImpl implements StudentService{
         return stdrepo.findById(id);
     }
     @Override
-    public string updatedata(Long id,Student st){
-        boolean status=stdrepo.exists
+    public String updatedata(Long id,Student st){
+        boolean status=stdrepo.existsById(id);
+        if(status){
+
+        }
     }
 }
