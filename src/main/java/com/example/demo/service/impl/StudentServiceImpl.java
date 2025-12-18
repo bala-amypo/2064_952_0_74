@@ -15,5 +15,5 @@ public class StudentServiceImpl implements StudentService{
         return stdrepo.save(st);
     }
     @Override
-    public List<student
+    public List<student>
 }
